@@ -1,0 +1,43 @@
+
+				*******Command Prompt Commands*******
+ - FC (First File) (Second File): compares the two files (windows Command
+ - dir: shows files in the directory you are in
+ - mkdir (new folder name): creates a new folder with the given name
+ - cd (new directory name): changes to specified directory
+ - cd .. : steps back a directory from the current directory
+ - git config --global color.ui auto : gets colored diff output
+ - git log : shows list of recent commits (use "q" to quite)
+
+ 				******Different Diff Commands******
+ - git diff (commit id 1)  (commit id 2) : compares difference between the commits
+ - git diff : shows difference Working Directory and corresponding file in Staging Area
+ - git diff --staged : shows difference between Staging Area and the most recent file in Repository
+
+     Working Directory	<- git diff ->	Staging Area  <- git diff --staged ->        Repository
+     																                - git diff (id1) (id2)
+
+
+ - git reset --hard : discards any changes in either the working directory or the staging :
+ - git clone (url for repository/file) : copys a file/repository from one computer onto yours
+ - git checkout (commit id #) : loads the reposity/file from the given commit id
+ - git init : initializes a new repository for the given directory "folder"
+ - git add (file/folder name) : addes files to staging area
+ - git commit : commits changes in staging area to the respository
+ - git branch : display all of the branches (includes the master)
+ - git branch (message arguement) : creates a new branch with the arguement name
+ - git checkout master : checks out the master branch
+ - git checkout (branch name) : checks out the branch that is listed
+ - git checkout -b (branch name) : creates and checks out a new branch with the given name
+ - git log --graph --online (branch1) (branch2) : displays a visual representation of the commit history of the  two branches
+ - git gc : runs gits garbage collection
+ - git merge (branch name) : merges the currently selected branch with the one passed in the value
+ - git show (commit id) : will show what changes were introduced by a commit compared to its parent)
+ - git branch -d (branch name) :  doesn't delete the commits in the branch, it will only delete the label
+ - git show (commit id) : compares a commit to its parent
+ stage
+ - git remote : views and creates remotes
+ - git remote add (remote name 'use origin') (remote url) :  creates remote connection
+ - git remote -v 'verbose' : displays connnection url (both fetch and push)
+ - git push (branch you want to push) : pushes the branch in local master branch to GitHub repositorygb
+
+ git config --global core.editor "'C:\Program Files (x86)\Sublime Text 3\sublime_text.exe' -n -w"
