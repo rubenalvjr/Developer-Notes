@@ -23,6 +23,7 @@
  - git init : initializes a new repository for the given directory "folder"
  - git add (file/folder name) : addes files to staging area
  - git commit : commits changes in staging area to the respository
+ - git commit -m "Message": commits changes in staging area to the respository with the given message 
  - git branch : display all of the branches (includes the master)
  - git branch (message arguement) : creates a new branch with the arguement name
  - git checkout master : checks out the master branch
