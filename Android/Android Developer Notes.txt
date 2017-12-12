@@ -44,4 +44,10 @@ ADB (Android Debug Bridge): installs app onto device, allows for debugging, and 
         LayoutInflater as a parameter:
         - View rootView = inflater.inflate(R.layout.fragment_main, container, false);
 
+
+******UI Building********
+ - android:textAppearance="?android:textAppearanceMedium" -> Uses android standards set of text sizes
+ - Make touch targets at least 48 dp at least
+ - use sp for adjusting text size and dp for everything else
+
 *****Tips and Tricks******
