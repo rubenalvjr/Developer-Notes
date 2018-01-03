@@ -23,7 +23,7 @@
  - git init : initializes a new repository for the given directory "folder"
  - git add (file/folder name) : addes files to staging area
  - git commit : commits changes in staging area to the respository
- - git commit -m "Message": commits changes in staging area to the respository with the given message 
+ - git commit -m "Message": commits changes in staging area to the respository with the given message
  - git branch : display all of the branches (includes the master)
  - git branch (message arguement) : creates a new branch with the arguement name
  - git checkout master : checks out the master branch
@@ -40,5 +40,11 @@
  - git remote add (remote name 'use origin') (remote url) :  creates remote connection
  - git remote -v 'verbose' : displays connnection url (both fetch and push)
  - git push (branch you want to push) : pushes the branch in local master branch to GitHub repositorygb
+ - git rm --cached -r . : removed all commited files from the staging area
 
  git config --global core.editor "'C:\Program Files (x86)\Sublime Text 3\sublime_text.exe' -n -w"
+
+  ******Creating a GitIgnore File (file that does not get load into Github) *******
+ - Create a .gitignore file (touch .gitignore)
+ - Add files to .gitignore file that you do not want to be uploaded to GitHub
+ - github.com/github/gitignore
