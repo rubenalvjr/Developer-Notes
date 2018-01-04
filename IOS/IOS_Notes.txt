@@ -1,0 +1,31 @@
+********How to persist data in IOS*******
+
+ **Core Data**
+ - NSPersistentContainer : Where data is stored (SQLLite Database)
+ Class(OOP) = Entity(Core Data) = Table(Database)
+ Properties(OOP) = Attribute(Core Data): Columns = Table(Field)
+ NSManagedObject : A Row in Core Data
+
+ - Application --> Context --> Persistant Container (SQL Lite Database)
+  +  Application is not able to directly interact with PersistantContainer
+  + Context acts as a middle man in between Application and PersistantContainer
+
+ - Core Data (Create Context)
+ let context = (UIApplication.shared.delegate as! AppDelegate).persistantContainer.viewContext  //This creates the context for the Application
+
+ - Core Data (Adding/Creating To Context)
+ let newItem = Item(context: self.context) //creates a new NSManagedObject instance of type Item
+
+ - Core Data (Saving Context to PersistantContainer)
+ context.save //Persists data from context to PersistantContainer
+
+ - Core Data (Reading from PersistantContainer)
+ let request = NSFetchRequest<Item> = Item.fetchRequest()
+ do {
+    (variable to hold data) = try context.fetch(request)
+ } catch {
+    print("Error message \(error)")
+ }
+
+ - Core Data (Deleting from Context --> PersistantContainer)
+ context.delete(itemsArry[indexPath.row])
